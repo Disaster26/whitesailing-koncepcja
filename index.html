@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Agencja eventowa Warszawa - White Sailing | gale, konferencje, premiery, roadshow</title>
+<meta name="description" content="White Sailing Event Agency z Warszawy: gale, konferencje, otwarcia, premiery, stoiska targowe, roadshow i eventy specjalne. Masz event? Zadzwoń: +48 795 141 365.">
+<meta name="theme-color" content="#0D1216">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch.png">
+<link rel="preload" as="image" href="img/hero-780.webp" imagesrcset="img/hero-520.webp 520w, img/hero-780.webp 780w, img/hero-1040.webp 1040w" imagesizes="(min-width:900px) min(52vw, 76svh), 100vw" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:"Manrope";font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--or:#FF5810;--or2:#E94A05;--ink:#0D1216;--ink2:#1C252D;--mut:#55606B;--sz:#EEF1F4;--line:#D8DDE3;--hh:68px;--w:calc(100vw - 32px);--gap:clamp(72px,8vw,140px)}
+@media (min-width:900px){:root{--hh:92px;--w:min(90vw,1680px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(17px,.25vw + 15.5px,19px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:800;line-height:1.06;letter-spacing:-.025em;text-wrap:balance}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* logo */
+.logo{display:block;flex:none;line-height:0;color:#fff;text-decoration:none}
+.logo svg{width:140px;height:auto}
+@media (min-width:900px){.logo svg{width:196px}}
+.logo .lg-or{fill:var(--or)}
+
+/* przycisk: dziob zagla zamiast zaokraglen */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.75em;min-height:58px;padding:0 34px 0 30px;background:var(--or);color:var(--ink);font:700 17px/1.2 Manrope,system-ui,sans-serif;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 100%,0 100%);transition:background-color .2s ease}
+.btn:hover{background:var(--or2)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.dk{background:var(--ink);color:#fff}
+.btn.dk:hover{background:var(--ink2)}
+
+/* fala z logo */
+.fala{display:block;width:clamp(120px,12vw,190px);height:auto;color:var(--or);margin-top:22px}
+
+/* naglowek */
+.hd{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);transition:background-color .25s ease,box-shadow .25s ease}
+.hd .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.nav{display:none;margin-left:auto;gap:clamp(22px,2.4vw,46px);align-items:center}
+.nav a{color:#fff;text-decoration:none;font:600 17px/1 Manrope,system-ui,sans-serif;padding:12px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:3px;background:var(--or);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.nav a:hover::after,.nav a[aria-current]::after{transform:scaleX(1)}
+.hd-tel{display:none}
+.nav a{text-shadow:0 1px 10px rgba(13,18,22,.7)}
+.hd.solid{background:#fff;box-shadow:0 1px 0 var(--line)}
+.hd.solid .nav a{text-shadow:none}
+.hd.solid .nav a,.hd.solid .logo{color:var(--ink)}
+.burger{margin-left:auto;width:48px;height:48px;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;color:#fff;padding:0}
+.hd.solid .burger{color:var(--ink)}
+.burger span{display:block;width:26px;height:2px;background:currentColor;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;height:2px;background:currentColor}
+.burger span::before{top:-8px;width:26px}.burger span::after{top:8px;width:16px}
+@media (min-width:1000px){.nav{display:flex}.burger{display:none}.mnav{display:none}.hd-tel{display:inline-flex;min-height:50px;font-size:16px;padding:0 28px 0 22px}}
+.mnav{position:fixed;inset:0;z-index:60;background:var(--ink);color:#fff;display:flex;flex-direction:column;padding:0 16px calc(24px + env(safe-area-inset-bottom));transform:translateX(100%);transition:transform .3s cubic-bezier(.3,.7,.4,1);visibility:hidden}
+.mnav.open{transform:none;visibility:visible}
+.mnav-top{height:var(--hh);display:flex;align-items:center;justify-content:space-between}
+.mnav-x{width:48px;height:48px;border:0;background:transparent;font-size:38px;line-height:1;cursor:pointer;color:#fff}
+.mnav ul{list-style:none;margin:28px 0 0;padding:0}
+.mnav li a{display:block;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14);font:800 30px/1.1 Manrope,system-ui,sans-serif;letter-spacing:-.02em;text-decoration:none}
+.mnav-kontakt{margin-top:auto;display:grid;gap:14px}
+.mnav-kontakt .btn{width:100%}
+.mnav-kontakt a.ml{color:#C9D0D7;font-size:16px;text-align:center;text-decoration:none;word-break:break-all}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate}
+.hero-ph{position:absolute;inset:0;z-index:-2}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:64% 22%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,18,22,.55) 0,rgba(13,18,22,0) 22%,rgba(13,18,22,.1) 28%,rgba(13,18,22,.8) 52%,rgba(13,18,22,.96) 100%)}
+.hero-edge{display:none}
+.hero-in{padding:calc(var(--hh) + 28px) 0 calc(56px + env(safe-area-inset-bottom))}
+.hero h1{font-size:clamp(34px,9.4vw,46px);max-width:15ch;text-shadow:0 1px 18px rgba(13,18,22,.5)}
+.hero .lead{margin-top:18px;font-size:17px;line-height:1.55;color:#E3E7EB;max-width:40ch}
+.hero .btn{margin-top:28px}
+.hero-kto{margin-top:18px;font-size:15px;color:#B9C1C9}
+.hero-kto b{color:#fff;font-weight:700}
+.hero-wave{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:clamp(22px,3vw,44px);color:#fff;z-index:1}
+@media (min-width:900px){
+ .hero{justify-content:center;min-height:max(100svh,640px)}
+ .hero::before{display:none}
+ .hero-ph{left:auto;width:min(52vw,76svh)}
+ .hero-ph img{object-position:50% 30%}
+ .hero-edge{display:block;position:absolute;top:0;bottom:0;right:calc(min(52vw,76svh) + 2px);width:calc(min(52vw,76svh) * .34);height:100%;transform:translateX(100%);color:var(--ink);z-index:0}
+ .hero-in{padding:calc(var(--hh) + 24px) 0 96px;width:var(--w);position:relative;z-index:1}
+ .hero h1{font-size:clamp(46px,4.3vw,88px);max-width:min(13.5ch,calc(100vw - min(52vw,76svh) - 10vw))}
+ .hero .lead{font-size:clamp(18px,1.15vw,22px);margin-top:26px;max-width:min(44ch,calc(100vw - min(52vw,76svh) - 12vw))}
+ .hero .btn{margin-top:38px}
+}
+
+/* sekcje */
+.sec{padding:var(--gap) 0}
+.sec h2{font-size:clamp(32px,4vw,64px)}
+.intro{margin-top:24px;color:var(--mut);max-width:62ch;font-size:clamp(17px,.4vw + 15px,20px)}
+
+/* program eventow */
+.prog{list-style:none;margin:clamp(40px,5vw,72px) 0 0;padding:0;border-top:2px solid var(--ink)}
+.prog li{position:relative;display:grid;gap:8px;padding:24px 0 26px 44px;border-bottom:1px solid var(--line)}
+.prog .zag{position:absolute;left:0;top:28px;width:26px;height:auto;color:var(--ink);transition:color .2s ease,transform .25s ease}
+.prog h3{font-size:clamp(26px,3vw,48px)}
+.prog p{color:var(--mut);max-width:52ch}
+.prog li:hover .zag{color:var(--or);transform:translateX(4px)}
+@media (min-width:900px){
+ .prog{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(40px,5vw,96px)}
+ .prog li{grid-template-columns:1fr;padding:34px 0 36px 60px}
+ .prog .zag{width:34px;top:40px}
+ .prog li:last-child{grid-column:1/-1}
+}
+
+/* pomaranczowa fala */
+.rozmowa{position:relative;background:var(--or);color:var(--ink);padding:clamp(96px,10vw,170px) 0 clamp(72px,8vw,130px)}
+.rozmowa-top{position:absolute;left:0;right:0;top:-1px;width:100%;height:clamp(40px,6vw,96px);color:#fff}
+.rozmowa .wrap{display:grid;gap:28px;align-items:end}
+.rozmowa h2{font-size:clamp(40px,6.2vw,112px);max-width:12ch}
+.rozmowa p{font-size:clamp(18px,1.2vw,22px);max-width:40ch;font-weight:500}
+.rozmowa .btn{justify-self:start}
+@media (min-width:900px){.rozmowa .wrap{grid-template-columns:1.25fr 1fr;column-gap:6vw}.rozmowa .r-tx{display:grid;gap:30px}}
+
+/* ekipa */
+.ekipa{background:var(--sz)}
+.ekipa .wrap{display:grid;gap:clamp(36px,5vw,96px);align-items:center}
+.ek-foto{position:relative;margin:0}
+.ek-foto button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;line-height:0}
+.ek-foto img{width:100%;aspect-ratio:520/469;object-fit:cover}
+.ek-foto figcaption{margin-top:12px;font-size:14px;color:var(--mut)}
+.ek-tx p{margin-top:20px;color:var(--ink2);max-width:56ch}
+.osoba{margin-top:34px;padding-top:28px;border-top:1px solid var(--line);display:grid;gap:6px}
+.osoba b{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.osoba a{text-decoration:none;font-weight:600;width:max-content;max-width:100%;word-break:break-all}
+.osoba a:hover{color:var(--or2)}
+.grupa{margin-top:34px;display:flex;align-items:center;gap:16px;font-size:14px;color:var(--mut)}
+.grupa img{width:150px;height:auto}
+@media (min-width:900px){.ekipa .wrap{grid-template-columns:1.1fr 1fr}}
+
+/* kontakt */
+.kontakt .wrap{display:grid;gap:clamp(40px,5vw,96px)}
+@media (min-width:1000px){.kontakt .wrap{grid-template-columns:1.15fr 1fr}}
+form{margin-top:34px;display:grid;gap:18px}
+.row2{display:grid;gap:18px}
+@media (min-width:640px){.row2{grid-template-columns:1fr 1fr}}
+label{display:grid;gap:6px;font-size:15px;font-weight:700}
+input,select,textarea{font:500 17px/1.4 Manrope,system-ui,sans-serif;color:var(--ink);background:#fff;border:1.5px solid #B9C1CA;border-radius:0;padding:14px 14px;min-height:54px;width:100%}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--or)}
+form .btn{justify-self:start}
+.f-info{font-size:14px;color:var(--mut)}
+.f-ok{display:none;padding:14px 16px;background:var(--sz);border-left:4px solid var(--or);font-weight:600}
+.f-ok.on{display:block}
+.k-dane{display:grid;gap:26px;align-content:start}
+.k-dane h3{font-size:15px;font-weight:700;color:var(--mut);letter-spacing:0}
+.k-dane .duzy{display:block;margin-top:6px;font-size:clamp(24px,2.2vw,36px);font-weight:800;letter-spacing:-.02em;text-decoration:none;word-break:break-all}
+.k-dane .duzy:hover{color:var(--or2)}
+.k-dane .sr-m{font-size:clamp(18px,1.3vw,22px)}
+.mapa{position:relative;aspect-ratio:4/3;background:var(--sz);border-top:4px solid var(--or)}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa span{position:absolute;inset:0;display:grid;place-items:center;color:var(--mut);font-size:15px}
+
+/* stopka */
+.ft{background:var(--ink);color:#AEB7C0;padding:56px 0 calc(28px + env(safe-area-inset-bottom));font-size:15px}
+.ft .wrap{display:grid;gap:28px}
+.ft-g{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ft .logo{color:#fff;grid-column:1/-1}
+.ft .logo svg{width:170px}
+.ft a{text-decoration:none}
+.ft a:hover{color:#fff}
+.ft b{display:block;color:#fff;font-weight:700;margin-bottom:6px}
+.ft-k{grid-column:1/-1}
+.ft-k a{overflow-wrap:anywhere}
+.ft-dol{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+@media (min-width:900px){.ft-g{grid-template-columns:1.4fr 1fr 1fr 1fr}.ft .logo,.ft-k{grid-column:auto}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(8,11,14,.94);display:none;align-items:center;justify-content:center;padding:56px 16px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.lb-x{position:absolute;top:8px;right:8px;width:52px;height:52px;border:0;background:transparent;color:#fff;font-size:40px;line-height:1;cursor:pointer}
+.lb-p{position:absolute;left:0;right:0;bottom:14px;text-align:center;color:#C9D0D7;font-size:14px;padding:0 16px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="lg" viewBox="0 0 620 243"><path fill="currentColor" fill-rule="evenodd" d="M40.2 195.9 39.7 195.6 39.9 194.9 46.6 187.3 57.6 171.9 68.8 153.0 74.8 141.0 81.7 125.1 89.7 101.6 92.7 90.6 95.7 77.1 97.9 63.0 99.1 51.3 99.7 41.7 99.7 31.3 98.7 18.2 97.4 9.6 96.5 6.3 96.9 6.0 100.7 9.3 106.6 15.5 112.8 23.4 117.6 30.4 121.8 37.1 124.7 42.9 129.7 55.4 132.7 68.7 133.4 79.7 132.7 92.5 129.7 105.1 126.7 113.4 122.8 121.7 115.5 133.6 107.6 144.7 101.5 151.7 94.8 158.7 88.6 164.7 80.6 171.6 63.9 183.8 52.1 190.7 40.3 195.9ZM175.6 204.6 162.5 204.4 156.0 203.7 140.2 200.9 127.3 198.0 125.4 197.9 116.6 196.1 108.0 195.1 96.7 194.4 79.5 194.4 73.8 194.9 72.8 194.6 73.1 194.0 86.2 184.6 94.5 177.7 103.1 169.7 110.7 161.6 116.6 154.4 124.6 143.4 133.7 126.9 137.7 117.3 140.9 107.3 142.7 99.5 143.9 91.6 144.4 84.3 144.4 75.5 143.7 67.7 141.5 55.4 138.9 46.9 139.2 46.0 139.9 46.3 146.6 54.3 151.6 61.1 158.8 72.3 166.6 86.6 172.8 100.8 179.7 119.4 183.7 133.0 186.7 145.1 190.7 167.0 192.6 184.5 193.1 201.3 192.6 202.0 190.5 202.7 185.0 203.7 175.7 204.5ZM317.4 112.6 311.5 112.4 310.8 111.9 310.7 90.8 309.9 86.7 308.5 84.4 307.4 83.2 305.5 82.3 303.2 81.8 300.4 81.8 296.8 83.1 294.1 85.5 292.3 88.6 291.9 90.5 291.8 111.9 291.3 112.4 290.0 112.4 285.0 112.4 284.2 111.9 284.1 58.8 284.5 57.8 291.0 57.6 291.9 58.2 292.0 80.7 292.7 80.7 294.1 79.0 296.5 77.1 301.3 75.3 303.8 75.1 308.1 75.3 310.7 76.2 313.8 78.1 315.7 80.4 317.7 84.6 318.1 88.0 318.2 111.2 317.5 112.5ZM515.7 112.4 509.7 112.4 508.9 111.7 508.8 58.7 509.0 58.0 509.7 57.6 515.3 57.6 516.1 58.0 516.4 58.7 516.4 111.2 515.8 112.4ZM331.2 69.6 329.4 69.5 327.2 68.7 326.0 67.6 325.0 65.4 325.0 63.1 325.8 61.2 326.6 60.2 328.9 59.0 331.6 58.9 333.1 59.5 334.6 60.5 335.9 63.1 335.9 65.3 334.8 67.6 333.6 68.7 331.3 69.5ZM433.2 113.6 428.7 113.4 421.9 111.7 418.2 109.7 415.3 107.6 415.0 106.4 418.1 101.5 418.7 101.1 422.5 103.8 427.6 105.9 430.0 106.4 434.7 106.4 438.1 105.7 440.2 104.5 442.6 101.7 443.2 98.8 442.8 95.8 441.5 93.8 439.4 92.1 434.7 90.0 425.1 86.8 420.3 83.6 418.3 81.0 417.1 78.2 416.6 75.5 416.6 72.5 417.2 69.1 419.1 65.4 420.2 64.1 423.8 61.3 426.2 60.1 429.1 59.5 432.2 58.9 436.3 58.9 442.7 60.2 447.2 62.1 449.2 63.5 449.7 64.6 447.5 69.4 446.2 69.9 443.0 68.0 437.6 66.4 432.0 66.4 429.4 67.0 427.1 68.3 425.3 70.7 424.8 73.0 425.1 75.8 426.5 77.7 429.1 79.6 441.9 84.2 447.7 88.1 449.6 90.8 450.7 93.8 451.1 98.7 450.9 101.3 449.7 104.8 447.9 107.5 445.6 109.7 442.3 111.7 439.4 112.7 433.3 113.5ZM499.2 69.4 496.3 69.4 495.0 68.9 492.8 66.4 492.3 64.2 492.9 62.0 494.2 60.1 496.2 59.0 500.0 59.2 501.7 60.4 502.8 62.3 503.1 64.8 502.8 66.4 500.7 68.7 499.3 69.4ZM529.9 69.6 527.9 69.6 526.0 68.8 523.9 66.3 523.6 64.0 524.1 61.8 525.3 60.1 527.6 59.0 530.6 59.0 532.5 60.0 533.7 61.4 534.4 63.2 534.4 64.9 533.6 67.1 532.2 68.6 530.0 69.5ZM260.4 112.7 252.5 112.6 251.2 111.7 242.1 83.6 239.5 74.3 238.5 72.8 238.0 73.6 236.7 79.2 226.6 111.7 225.2 112.7 216.8 112.6 215.8 112.2 215.0 111.0 199.7 64.8 198.1 60.8 198.2 59.9 198.8 59.7 206.5 59.8 207.7 60.4 220.8 102.1 221.3 102.6 221.9 102.1 223.1 96.6 234.0 60.9 234.6 60.0 242.0 59.8 243.0 60.4 255.7 99.9 256.0 102.1 256.5 102.5 257.2 101.7 269.9 60.3 271.0 59.8 278.6 59.9 278.8 60.9 272.1 80.0 261.8 111.6 261.4 112.3 260.5 112.7ZM359.7 113.4 353.2 113.4 351.2 112.9 349.0 111.7 347.0 109.5 346.0 107.7 345.3 104.2 345.4 83.6 344.4 82.5 340.5 82.5 339.4 81.6 339.3 77.7 339.7 76.8 340.5 76.4 344.6 76.4 345.5 75.6 346.2 66.1 346.9 65.6 352.2 64.5 352.8 64.6 353.1 65.3 353.0 75.1 353.3 76.1 354.2 76.4 362.5 76.4 363.4 77.4 363.4 81.7 362.9 82.6 353.8 82.6 352.9 83.5 352.9 101.2 353.9 105.0 355.4 106.6 356.7 107.0 360.5 106.9 362.3 105.9 363.0 106.1 363.4 106.7 364.3 111.6 362.7 112.7 359.8 113.4ZM385.1 113.6 381.0 113.4 378.1 112.7 375.7 111.7 372.3 109.6 370.1 107.2 368.2 104.2 366.4 99.0 366.4 90.0 368.3 84.5 370.3 81.3 373.3 78.4 376.9 76.2 380.4 75.3 387.5 75.3 390.6 76.2 394.3 78.3 396.7 80.7 398.7 83.7 399.7 86.4 400.9 92.0 401.0 95.3 400.7 96.1 400.1 96.5 375.2 96.4 374.1 96.8 374.1 98.9 375.2 102.1 378.1 105.5 380.1 106.7 384.5 107.6 389.5 106.9 396.0 103.8 396.7 104.0 399.3 107.1 399.3 107.7 398.7 108.5 394.2 111.7 390.9 112.9 385.2 113.5ZM485.2 113.4 481.0 112.4 479.3 110.3 478.5 108.1 474.4 111.8 472.4 112.7 469.0 113.4 465.2 113.4 461.9 112.7 458.8 110.8 457.3 109.2 455.8 106.6 455.1 103.8 455.1 101.4 456.2 97.6 458.9 94.0 461.7 92.1 466.1 90.6 472.3 90.6 476.3 91.1 477.5 91.7 478.1 91.4 478.2 90.5 477.7 85.8 476.7 84.1 474.5 82.4 472.3 81.8 467.6 81.8 463.8 83.1 460.9 84.9 460.0 85.1 459.4 84.6 457.1 80.5 457.4 79.3 461.2 77.1 464.2 76.0 467.0 75.3 471.5 75.1 474.8 75.3 477.9 76.2 481.2 78.0 483.4 80.2 484.8 82.6 485.7 85.7 486.1 106.3 487.3 107.5 489.5 107.9 489.9 111.0 489.5 111.9 488.7 112.5 485.3 113.4ZM572.4 112.4 566.7 112.4 565.7 111.7 565.5 87.7 564.8 85.5 563.6 83.7 561.3 82.1 559.7 81.8 556.2 81.8 552.8 83.1 550.2 85.9 549.1 88.2 548.6 90.7 548.4 112.0 547.3 112.4 542.0 112.4 541.3 112.1 541.1 77.7 541.4 76.5 547.6 76.4 548.1 77.0 547.9 80.7 548.4 81.3 552.6 77.2 557.4 75.3 563.9 75.3 568.0 77.1 569.9 78.8 571.8 81.9 572.7 84.6 573.1 87.3 573.1 111.2 572.5 112.4ZM597.7 129.2 590.5 128.7 586.8 127.5 581.8 124.6 581.3 123.9 581.3 123.1 583.3 119.2 584.0 118.8 589.4 121.7 593.5 122.7 597.5 122.9 601.8 121.5 604.6 119.2 606.5 115.5 607.1 112.3 607.0 107.2 606.3 107.0 605.1 108.8 602.5 110.8 600.5 111.7 596.8 112.7 594.2 112.7 589.9 111.9 585.7 109.7 583.3 107.5 581.2 104.6 580.1 102.1 579.1 97.9 578.9 92.2 580.1 85.9 582.1 82.0 584.3 79.3 587.2 77.1 589.6 76.0 593.8 75.1 598.9 75.3 603.3 77.1 607.2 80.3 607.6 79.8 607.3 77.7 608.0 76.3 613.8 76.1 614.4 76.6 614.6 77.5 614.6 110.2 613.7 117.7 611.5 122.3 608.4 125.6 604.9 127.7 602.4 128.6 597.8 129.2ZM531.6 112.4 525.7 112.4 524.9 111.5 524.9 77.3 525.1 76.5 525.7 76.1 531.8 76.3 532.7 77.2 532.7 111.2 532.5 112.1 531.7 112.4ZM333.2 112.4 326.9 112.4 326.1 111.5 326.1 77.7 326.4 76.7 327.4 76.3 332.8 76.3 333.7 77.0 333.8 111.3 333.3 112.4ZM500.4 112.6 494.7 112.5 493.9 111.6 493.9 77.3 494.1 76.6 494.7 76.3 500.3 76.3 501.2 77.2 501.4 111.3 500.5 112.5ZM375.1 91.5 392.3 91.2 393.2 90.9 393.4 90.2 392.7 87.5 391.7 85.3 389.6 83.0 386.1 81.1 381.3 81.1 379.0 82.1 377.3 83.3 375.3 86.0 373.9 90.3 374.1 91.3 375.0 91.5ZM598.8 106.3 602.6 104.8 605.7 101.3 606.7 99.4 607.1 97.3 607.1 91.5 606.7 89.1 605.8 86.8 603.7 83.9 600.6 82.0 597.6 81.1 595.2 81.1 590.9 83.0 588.1 86.2 586.8 90.5 586.8 97.5 588.1 101.6 589.3 103.3 590.8 104.7 592.4 105.7 594.7 106.4 598.7 106.3ZM470.1 107.7 474.2 106.6 477.6 103.5 478.4 100.7 478.2 97.5 477.7 96.7 475.6 95.9 469.5 95.8 466.1 96.7 464.0 98.3 463.1 99.8 462.8 101.8 463.0 103.9 464.0 105.6 465.2 106.7 467.1 107.5 470.0 107.7Z"/><path class="lg-or" fill="#FF5810" fill-rule="evenodd" d="M156.4 237.2 141.3 237.2 130.4 236.1 119.1 233.7 100.1 228.0 80.6 223.1 63.5 220.9 44.7 220.9 35.4 222.1 33.8 222.7 29.9 223.2 19.1 226.2 13.6 228.2 7.1 231.5 6.5 231.4 7.6 230.2 18.2 223.1 28.9 217.2 33.6 215.2 41.7 212.1 48.3 210.3 59.0 208.1 64.8 207.4 71.5 206.9 89.3 206.9 99.5 207.9 116.1 211.0 145.4 218.6 159.2 220.9 168.2 221.4 177.3 221.4 185.2 220.9 192.8 219.7 206.3 215.7 211.0 213.8 215.0 211.3 215.7 211.3 214.9 212.7 210.7 216.6 204.1 221.6 195.7 226.6 189.3 229.7 178.6 233.7 171.4 235.5 164.8 236.6 156.5 237.2ZM358.6 161.1 355.7 161.1 354.9 160.7 351.4 153.2 345.3 152.9 338.3 153.2 334.8 160.7 332.0 161.1 330.9 160.7 330.9 159.8 342.1 132.7 342.9 131.9 346.6 131.8 347.7 133.2 358.9 159.7 359.0 160.5 358.7 161.0ZM232.7 161.1 214.8 161.1 214.0 160.6 213.8 132.7 214.3 131.9 231.5 131.8 232.6 132.1 232.7 134.6 231.9 135.4 219.0 135.3 218.0 135.8 217.9 143.5 218.3 144.5 229.8 144.6 230.6 144.9 230.9 145.7 230.8 147.4 230.1 148.1 218.3 148.2 217.9 149.2 217.9 156.0 218.1 156.8 218.8 157.2 232.8 157.3 233.4 157.7 233.6 158.7 233.5 160.4 232.8 161.0ZM316.1 161.6 311.6 161.5 309.4 160.5 308.2 159.4 307.1 156.2 307.0 144.1 306.4 143.3 304.3 143.3 303.6 142.5 303.8 140.2 306.5 139.9 307.0 139.4 307.4 135.4 310.2 134.5 311.1 135.0 311.1 139.0 311.4 139.6 317.5 139.9 318.2 140.6 318.2 142.4 317.5 143.3 312.4 143.3 311.5 143.6 311.1 144.3 311.3 155.6 312.1 157.3 313.0 157.9 315.3 158.1 317.3 157.5 317.8 157.8 318.3 160.4 316.2 161.5ZM349.8 149.6 350.1 149.0 349.9 148.0 345.7 137.1 344.9 136.7 344.2 137.4 340.0 147.9 339.8 149.3 340.5 149.6 349.7 149.7ZM267.4 161.7 264.5 161.6 262.1 160.8 259.3 159.1 257.1 156.1 255.9 152.2 256.1 147.6 258.0 143.4 260.2 141.3 261.8 140.2 265.3 139.3 267.5 139.3 270.4 140.0 272.4 141.2 274.5 143.5 275.9 147.2 275.9 151.0 275.2 151.6 260.9 151.5 260.1 151.9 260.1 152.8 261.2 155.2 262.3 156.6 264.4 157.9 267.6 158.4 270.6 157.7 273.3 155.9 274.6 156.4 275.2 157.9 273.7 159.6 269.7 161.5 267.5 161.7ZM299.6 161.1 297.4 161.0 296.5 160.3 296.4 149.0 295.8 145.6 294.7 144.2 293.5 143.3 291.2 142.8 288.9 143.3 287.4 144.1 285.3 147.0 284.9 148.7 284.8 160.7 283.7 161.1 281.2 160.7 280.9 140.8 281.2 140.1 284.4 140.0 284.7 140.5 284.7 142.4 285.3 142.7 288.3 140.1 291.0 139.3 293.3 139.3 296.1 140.1 298.5 142.1 299.9 144.7 300.2 147.8 300.4 160.2 299.7 161.0ZM373.9 169.9 367.3 169.6 362.8 167.3 362.3 166.1 363.0 164.3 363.7 163.9 369.0 166.2 373.0 166.2 374.7 165.8 376.4 164.7 377.8 162.9 378.7 159.6 378.6 157.7 378.0 157.6 375.6 159.7 372.8 160.9 369.0 160.9 365.9 159.7 363.3 157.6 362.0 155.4 361.1 152.6 361.2 148.1 362.0 145.1 363.2 143.2 365.2 141.3 367.3 140.0 370.0 139.3 372.8 139.3 375.3 140.1 378.5 142.7 378.9 142.3 378.8 140.7 379.1 140.0 381.8 140.0 382.3 140.3 382.4 141.2 382.4 159.2 382.0 162.6 380.8 165.6 379.7 166.9 377.2 168.8 374.0 169.9ZM398.6 161.7 395.2 161.5 391.1 159.8 389.9 158.8 388.2 156.4 386.9 152.8 387.0 148.7 388.0 145.4 389.2 143.3 391.2 141.3 392.8 140.2 396.8 139.3 401.8 140.1 404.6 142.0 405.7 143.4 406.7 145.5 407.6 150.0 407.3 151.2 406.3 151.7 392.0 151.5 391.2 151.8 391.0 152.7 392.1 155.3 394.9 157.8 397.8 158.6 400.8 158.0 402.0 157.6 404.7 155.8 406.4 157.4 406.2 158.5 404.7 159.9 400.8 161.5 398.7 161.7ZM430.9 161.1 428.5 161.1 427.7 160.5 427.5 146.9 426.0 144.1 424.4 143.1 422.8 142.8 420.9 143.0 419.3 143.7 417.1 145.9 416.3 148.0 416.2 160.4 415.2 161.1 412.3 160.7 412.1 141.3 412.4 140.1 415.9 140.0 415.8 142.0 416.3 142.6 419.4 140.1 422.7 139.3 425.0 139.3 427.2 140.0 429.5 141.6 430.8 143.8 431.7 147.5 431.7 160.0 431.0 161.0ZM447.4 161.7 444.4 161.6 442.1 160.8 439.2 158.9 436.9 156.0 435.8 152.0 435.8 149.2 436.3 146.7 438.2 143.1 440.3 141.2 442.0 140.2 445.5 139.3 448.1 139.3 450.9 140.1 452.8 141.3 454.1 143.0 453.6 144.2 452.5 145.1 448.8 143.0 446.5 142.8 444.7 143.1 442.0 144.8 440.1 147.7 439.8 150.5 440.1 153.3 441.9 156.3 443.6 157.6 446.8 158.4 449.1 158.0 453.2 155.8 454.6 157.3 454.6 158.5 452.1 160.5 449.3 161.5 447.5 161.7ZM461.1 169.7 457.7 169.7 456.2 168.9 455.8 168.3 456.8 165.7 459.8 165.9 461.4 165.3 462.6 163.9 463.9 160.8 455.9 140.3 456.7 139.8 459.3 139.9 459.9 140.3 465.2 153.6 465.8 155.0 466.3 155.2 466.8 154.9 471.9 140.3 472.5 139.9 475.8 140.0 476.1 140.5 475.9 141.3 466.7 164.1 464.5 167.7 463.5 168.7 461.2 169.7ZM245.7 161.1 243.2 161.0 242.2 160.2 234.4 140.6 234.6 140.0 237.7 139.9 238.6 140.4 244.0 155.2 244.5 155.7 245.2 155.0 250.6 140.4 251.7 139.9 254.0 139.9 254.6 140.3 246.8 160.2 245.8 161.0ZM271.8 148.6 272.1 148.1 272.0 147.1 270.6 144.5 268.7 143.2 267.2 142.8 264.3 143.0 262.4 144.0 261.1 145.4 260.0 147.7 260.3 148.5 260.8 148.7 271.7 148.7ZM373.1 157.5 376.4 155.8 377.7 154.2 378.7 151.3 378.7 148.7 377.7 146.2 375.4 143.9 373.8 143.0 370.9 142.8 368.1 143.9 366.3 145.9 365.1 148.7 365.1 151.5 366.1 154.4 367.2 155.9 370.3 157.5 373.0 157.5ZM402.8 148.6 403.3 148.1 403.2 147.3 401.8 144.4 400.1 143.1 398.3 142.8 395.4 143.0 393.3 144.2 392.1 145.4 391.1 147.7 391.2 148.5 391.7 148.7 402.7 148.7Z"/></symbol>
+ <symbol id="zg" viewBox="36 2 162 206"><path fill="currentColor" fill-rule="evenodd" d="M40.2 195.9 39.7 195.6 39.9 194.9 46.6 187.3 57.6 171.9 68.8 153.0 74.8 141.0 81.7 125.1 89.7 101.6 92.7 90.6 95.7 77.1 97.9 63.0 99.1 51.3 99.7 41.7 99.7 31.3 98.7 18.2 97.4 9.6 96.5 6.3 96.9 6.0 100.7 9.3 106.6 15.5 112.8 23.4 117.6 30.4 121.8 37.1 124.7 42.9 129.7 55.4 132.7 68.7 133.4 79.7 132.7 92.5 129.7 105.1 126.7 113.4 122.8 121.7 115.5 133.6 107.6 144.7 101.5 151.7 94.8 158.7 88.6 164.7 80.6 171.6 63.9 183.8 52.1 190.7 40.3 195.9ZM175.6 204.6 162.5 204.4 156.0 203.7 140.2 200.9 127.3 198.0 125.4 197.9 116.6 196.1 108.0 195.1 96.7 194.4 79.5 194.4 73.8 194.9 72.8 194.6 73.1 194.0 86.2 184.6 94.5 177.7 103.1 169.7 110.7 161.6 116.6 154.4 124.6 143.4 133.7 126.9 137.7 117.3 140.9 107.3 142.7 99.5 143.9 91.6 144.4 84.3 144.4 75.5 143.7 67.7 141.5 55.4 138.9 46.9 139.2 46.0 139.9 46.3 146.6 54.3 151.6 61.1 158.8 72.3 166.6 86.6 172.8 100.8 179.7 119.4 183.7 133.0 186.7 145.1 190.7 167.0 192.6 184.5 193.1 201.3 192.6 202.0 190.5 202.7 185.0 203.7 175.7 204.5Z"/></symbol>
+ <symbol id="fl" viewBox="4 204 214 36" preserveAspectRatio="none"><path fill="currentColor" d="M156.4 237.2 141.3 237.2 130.4 236.1 119.1 233.7 100.1 228.0 80.6 223.1 63.5 220.9 44.7 220.9 35.4 222.1 33.8 222.7 29.9 223.2 19.1 226.2 13.6 228.2 7.1 231.5 6.5 231.4 7.6 230.2 18.2 223.1 28.9 217.2 33.6 215.2 41.7 212.1 48.3 210.3 59.0 208.1 64.8 207.4 71.5 206.9 89.3 206.9 99.5 207.9 116.1 211.0 145.4 218.6 159.2 220.9 168.2 221.4 177.3 221.4 185.2 220.9 192.8 219.7 206.3 215.7 211.0 213.8 215.0 211.3 215.7 211.3 214.9 212.7 210.7 216.6 204.1 221.6 195.7 226.6 189.3 229.7 178.6 233.7 171.4 235.5 164.8 236.6 156.5 237.2Z"/></symbol>
+</svg>
+
+<header class="hd" id="hd">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="White Sailing Event Agency - strona główna"><svg viewBox="0 0 620 243" width="196" height="77" aria-hidden="true"><use href="#lg"/></svg></a>
+  <nav class="nav" aria-label="Menu główne">
+   <a href="#eventy">Eventy</a>
+   <a href="#ekipa">Ekipa</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="btn hd-tel" href="tel:+48795141365">795 141 365</a>
+  <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+ </div>
+</header>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+ <div class="mnav-top">
+  <a class="logo" href="#top" aria-label="White Sailing - strona główna"><svg viewBox="0 0 620 243" width="150" height="59" aria-hidden="true"><use href="#lg"/></svg></a>
+  <button class="mnav-x" id="mnavx" aria-label="Zamknij menu">&times;</button>
+ </div>
+ <ul>
+  <li><a href="#eventy">Eventy</a></li>
+  <li><a href="#ekipa">Ekipa</a></li>
+  <li><a href="#kontakt">Kontakt</a></li>
+ </ul>
+ <div class="mnav-kontakt">
+  <a class="btn" href="tel:+48795141365">Zadzwoń: 795 141 365</a>
+  <a class="ml" href="mailto:grzegorz.wilczek@whitesailing.pl">grzegorz.wilczek@whitesailing.pl</a>
+ </div>
+</div>
+
+<main id="top">
+<section class="hero" aria-label="White Sailing Event Agency">
+ <picture class="hero-ph">
+  <img src="img/hero-780.webp" srcset="img/hero-520.webp 520w, img/hero-780.webp 780w, img/hero-1040.webp 1040w" sizes="(min-width:900px) min(52vw, 76svh), 100vw" width="1040" height="1381" alt="Ekipa White Sailing Event Team za kulisami sceny podczas realizacji wydarzenia" fetchpriority="high" decoding="async">
+ </picture>
+ <svg class="hero-edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 0H62C50 22 30 62 0 100Z"/></svg>
+ <div class="hero-in wrap">
+  <h1>Agencja eventowa w Warszawie - eventy pod pełnymi żaglami</h1>
+  <p class="lead">Gale, konferencje, otwarcia, premiery, stoiska targowe, roadshow i eventy specjalne. Masz event? Porozmawiajmy.</p>
+  <a class="btn" href="tel:+48795141365"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6.2 2.5 3.4 3.3c-.6 2.6.5 6.3 3.6 9.6 3.2 3.2 6.9 4.3 9.6 3.7l.9-2.8-3.5-1.9-1.6 1.6c-1.9-.8-3.6-2.5-4.4-4.4l1.6-1.6Z"/></svg>Zadzwoń: 795 141 365</a>
+  <p class="hero-kto">Rozmawia z Państwem <b>Grzegorz Wilczek</b></p>
+ </div>
+ <svg class="hero-wave" viewBox="0 0 1440 44" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 44V30C180 6 420 0 640 14S1040 40 1260 22C1340 15 1400 8 1440 6V44Z"/></svg>
+</section>
+
+<section class="sec" id="eventy">
+ <div class="wrap">
+  <h2>Eventy, które prowadzimy</h2>
+  <svg class="fala" viewBox="0 0 214 36" preserveAspectRatio="none" width="190" height="32" aria-hidden="true"><use href="#fl"/></svg>
+  <p class="intro">White Sailing to agencja eventowa. Prowadzimy siedem rodzajów wydarzeń - od wieczornej gali po trasę roadshow przez kilka miast.</p>
+  <ul class="prog">
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Gale</h3><p>Wieczory z wręczeniem nagród, sceną, światłem i oprawą, na które goście czekają.</p></li>
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Konferencje</h3><p>Scena, ekran, nagłośnienie i plan dnia, w którym prelegenci i goście wiedzą, gdzie mają być.</p></li>
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Otwarcia</h3><p>Start nowego miejsca - lokalu, biura, salonu - z gośćmi i jednym ważnym momentem.</p></li>
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Premiery</h3><p>Pokaz nowego produktu albo marki, zaplanowany pod chwilę odsłonięcia.</p></li>
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Stoiska targowe</h3><p>Stoisko na targach, przy którym odwiedzający chcą się zatrzymać i porozmawiać.</p></li>
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Roadshow</h3><p>To samo wydarzenie w kilku miastach - jeden scenariusz, jedna ekipa, kolejne przystanki.</p></li>
+   <li><svg class="zag" viewBox="0 0 162 206" aria-hidden="true"><use href="#zg"/></svg><h3>Eventy specjalne</h3><p>Wydarzenia, które nie mieszczą się w żadnej z powyższych nazw. Opowiedzą nam Państwo pomysł, a my zaproponujemy, jak go zrealizować.</p></li>
+  </ul>
+ </div>
+</section>
+
+<section class="rozmowa" aria-labelledby="rozm-h">
+ <svg class="rozmowa-top" viewBox="0 0 1440 96" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 0H1440V20C1360 50 1250 70 1100 62 900 50 760 14 560 26 360 38 160 92 0 70Z"/></svg>
+ <div class="wrap">
+  <h2 id="rozm-h">Masz event? Porozmawiajmy.</h2>
+  <div class="r-tx">
+   <p>Zadzwoń albo napisz i opowiedz, co planujesz: jaki to event, kiedy, gdzie i dla ilu gości.</p>
+   <a class="btn dk" href="tel:+48795141365"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6.2 2.5 3.4 3.3c-.6 2.6.5 6.3 3.6 9.6 3.2 3.2 6.9 4.3 9.6 3.7l.9-2.8-3.5-1.9-1.6 1.6c-1.9-.8-3.6-2.5-4.4-4.4l1.6-1.6Z"/></svg>+48 795 141 365</a>
+  </div>
+ </div>
+</section>
+
+<section class="sec ekipa" id="ekipa">
+ <div class="wrap">
+  <figure class="ek-foto">
+   <button type="button" data-big="img/hero-1040.webp" data-alt="Backstage realizacji wydarzenia White Sailing" aria-label="Powiększ zdjęcie"><img src="img/scena-520.webp" srcset="img/scena-520.webp 520w, img/scena-900.webp 900w" sizes="(min-width:900px) 48vw, 100vw" width="900" height="812" alt="Scena z ekranem LED i konstrukcją z oświetleniem podczas wydarzenia White Sailing" loading="lazy" decoding="async"></button>
+   <figcaption>Backstage jednej z realizacji White Sailing</figcaption>
+  </figure>
+  <div class="ek-tx">
+   <h2>White Sailing Event Team</h2>
+   <svg class="fala" viewBox="0 0 214 36" preserveAspectRatio="none" width="190" height="32" aria-hidden="true"><use href="#fl"/></svg>
+   <p>Goście widzą scenę, światło i ekran. My pracujemy po drugiej stronie kurtyny - wśród kabli, skrzyń i konstrukcji, zanim ktokolwiek wejdzie na salę.</p>
+   <p>Eventy realizujemy w pełnym biegu, a pierwszą rozmowę o Państwa wydarzeniu prowadzi bezpośrednio Grzegorz Wilczek.</p>
+   <div class="osoba">
+    <b>Grzegorz Wilczek</b>
+    <a href="tel:+48795141365">+48 795 141 365</a>
+    <a href="mailto:grzegorz.wilczek@whitesailing.pl">grzegorz.wilczek@whitesailing.pl</a>
+   </div>
+   <div class="grupa"><span>White Sailing jest częścią</span><img src="img/n42-360.webp" width="360" height="99" alt="N42 Group" loading="lazy"></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec kontakt" id="kontakt">
+ <div class="wrap">
+  <div>
+   <h2>Zapytanie o event</h2>
+   <svg class="fala" viewBox="0 0 214 36" preserveAspectRatio="none" width="190" height="32" aria-hidden="true"><use href="#fl"/></svg>
+   <form id="form" novalidate>
+    <div class="row2">
+     <label>Imię i nazwisko<input name="n" autocomplete="name"></label>
+     <label>Firma<input name="f" autocomplete="organization"></label>
+    </div>
+    <div class="row2">
+     <label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+     <label>E-mail<input name="e" type="email" autocomplete="email"></label>
+    </div>
+    <div class="row2">
+     <label>Rodzaj eventu<select name="r"><option>Gala</option><option>Konferencja</option><option>Otwarcie</option><option>Premiera</option><option>Stoisko targowe</option><option>Roadshow</option><option>Event specjalny</option></select></label>
+     <label>Termin i liczba gości<input name="d" placeholder="np. marzec, ok. 200 osób"></label>
+    </div>
+    <label>Kilka słów o wydarzeniu<textarea name="m"></textarea></label>
+    <button class="btn" type="submit">Wyślij zapytanie</button>
+    <p class="f-ok" id="fok" role="status">To podgląd strony - formularz jeszcze nie wysyła wiadomości. Zapraszamy do kontaktu telefonicznego: 795 141 365.</p>
+    <p class="f-info">Odpowiedź wraca na podany telefon albo e-mail.</p>
+   </form>
+  </div>
+  <div class="k-dane">
+   <div><h3>Telefon</h3><a class="duzy" href="tel:+48795141365">+48 795 141 365</a></div>
+   <div><h3>E-mail</h3><a class="duzy sr-m" href="mailto:grzegorz.wilczek@whitesailing.pl">grzegorz.wilczek@whitesailing.pl</a></div>
+   <div><h3>Siedziba</h3><span class="duzy sr-m">Warszawa</span></div>
+   <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Warszawa&amp;z=11&amp;output=embed"><span>Mapa Google</span></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="ft">
+ <div class="wrap">
+  <div class="ft-g">
+   <a class="logo" href="#top" aria-label="White Sailing - do góry"><svg viewBox="0 0 620 243" width="170" height="67" aria-hidden="true"><use href="#lg"/></svg></a>
+   <div><b>Eventy</b>Gale, konferencje, otwarcia, premiery, stoiska targowe, roadshow</div>
+   <div class="ft-k"><b>Kontakt</b><a href="tel:+48795141365">+48 795 141 365</a><br><a href="mailto:grzegorz.wilczek@whitesailing.pl">grzegorz.wilczek@whitesailing.pl</a></div>
+   <div><b>White Sailing</b>Agencja eventowa, Warszawa<br>Część N42 Group</div>
+  </div>
+  <div class="ft-dol">
+   <span>&copy; 2026 White Sailing Event Agency</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=whitesailing.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <button class="lb-x" id="lbx" aria-label="Zamknij">&times;</button>
+ <img id="lbi" alt="">
+ <p class="lb-p" id="lbp"></p>
+</div>
+
+<script>
+(function(){
+var hd=document.getElementById('hd');
+function sc(){hd.classList.toggle('solid',window.scrollY>40)}
+sc();window.addEventListener('scroll',sc,{passive:true});
+var m=document.getElementById('mnav'),b=document.getElementById('burger');
+function mn(o){m.classList.toggle('open',o);m.setAttribute('aria-hidden',!o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+b.addEventListener('click',function(){mn(true)});
+document.getElementById('mnavx').addEventListener('click',function(){mn(false)});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn(false)})});
+var lb=document.getElementById('lb'),li=document.getElementById('lbi'),lp=document.getElementById('lbp');
+function cl(){lb.classList.remove('on');document.body.style.overflow=''}
+document.querySelectorAll('[data-big]').forEach(function(x){x.addEventListener('click',function(){li.src=x.dataset.big;li.alt=x.dataset.alt||'';lp.textContent=x.dataset.alt||'';lb.classList.add('on');document.body.style.overflow='hidden'})});
+document.getElementById('lbx').addEventListener('click',cl);
+lb.addEventListener('click',function(e){if(e.target===lb)cl()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){cl();mn(false)}});
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('fok').classList.add('on')});
+var mp=document.getElementById('mapa');
+function lm(){if(mp.dataset.on)return;mp.dataset.on=1;var f=document.createElement('iframe');f.src=mp.dataset.src;f.title='Mapa Google - Warszawa';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mp.appendChild(f)}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){lm();io.disconnect()}},{rootMargin:'300px'});io.observe(mp)}else lm();
+var secs=['eventy','ekipa','kontakt'].map(function(i){return document.getElementById(i)}),nl=document.querySelectorAll('.nav a');
+if('IntersectionObserver' in window){var io2=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){nl.forEach(function(a){a.toggleAttribute('aria-current',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){io2.observe(s)})}
+})();
+</script>
+</body>
+</html>
